@@ -1,0 +1,28 @@
+{
+  "name": "crel",
+  "description": "A small, simple, and fast DOM creation utility",
+  "tags": [
+    "DOM"
+  ],
+  "version": "4.0.2",
+  "main": "crel.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "open-cli": "^8.0.0",
+    "tape": "^5.8.1",
+    "terser": "^5.31.6"
+  },
+  "scripts": {
+    "test": "npm run testBuild && open-cli ./test/test.html",
+    "testBuild": "browserify ./test/index.js > ./test/index.browser.js",
+    "build": "terser crel.js -o crel.min.js --warn --ecma 6 -c evaluate=false,pure_getters -m"
+  },
+  "license": "MIT",
+  "contributors": [],
+  "homepage": "https://github.com/null-none/crel2",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": []
+}
