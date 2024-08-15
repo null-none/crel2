@@ -1,7 +1,5 @@
 # crel2
 
-Writing HTML is stupid. It's slow, messy, and should not be done in JavaScript.
-
 The best way to make DOM elements is via `document.createElement`, but making lots of them with it is tedious.
 
 
