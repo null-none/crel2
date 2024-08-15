@@ -4,10 +4,6 @@ Writing HTML is stupid. It's slow, messy, and should not be done in JavaScript.
 
 The best way to make DOM elements is via `document.createElement`, but making lots of them with it is tedious.
 
-Crel makes this process easier.
-
-Inspiration was taken from [laconic](https://github.com/joestelmach/laconic), but Crel wont screw with your bad in-DOM event listeners, and it's smaller,
-faster, etc...
 
 # Installing
 
@@ -22,7 +18,7 @@ let crel = require('crel2');
 For AMD:
 
 ```javascript
-require.config({paths: { crel: 'crel.min' }});
+require.config({paths: { crel: 'https://raw.githubusercontent.com/null-none/crel2/main/crel.min.js' }});
 require(['crel'], (crel) => {
     // Your code
 });
