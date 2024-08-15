@@ -18,7 +18,7 @@ let crel = require('crel2');
 For AMD:
 
 ```javascript
-require.config({paths: { crel: 'https://raw.githubusercontent.com/null-none/crel2/main/crel.min.js' }});
+require.config({paths: { crel: 'https://example.com/static/js/crel.min.js' }});
 require(['crel'], (crel) => {
     // Your code
 });
@@ -84,7 +84,16 @@ crel('img', { on: {
 You can pass already available elements to Crel to modify their attributes / add child elements to them
 
 ```javascript
-crel(document.body, crel('h1', 'Page title'));
+crel(document.body, 
+    crel('h1', 'Page title'),
+    crel('p', 'This is a paragraph'),
+    crel('ul', 
+        crel('li', 'item 1'),
+        crel('li', 'item 2'),
+        crel('li', 'item 3')
+    ),
+    crel('button', 'Click me', {onclick: () => alert('Hello!')})
+);
 ```
 
 You can assign child elements to variables during creation:
