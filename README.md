@@ -123,27 +123,3 @@ let element = crel.div(
     crel.input({ type: 'number' })
 );
 ```
-
-# Browser support
-
-Crel uses ES6 features, so it'll work in all evergreen browsers.
-
-# Goals
-
-### Easy to use & Tiny
-
-Less than 1K minified, about 500 bytes gzipped === **Smal**
-
-### Fast
-
-Crel is fast.
-Depending on what browser you use, it is up there with straight `document.createElement` calls: http://jsperf.com/dom-creation-libs/10
-
-# License
-
-**MIT**
-
-[npm-image]: https://img.shields.io/npm/v/crel.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/crel
-[downloads-image]: http://img.shields.io/npm/dm/crel.svg?style=flat-square
-[downloads-url]: https://npmjs.org/package/crel
