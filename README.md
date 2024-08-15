@@ -5,7 +5,7 @@ Writing HTML is stupid. It's slow, messy, and should not be done in JavaScript.
 The best way to make DOM elements is via `document.createElement`, but making lots of them with it is tedious.
 
 
-# Installing
+### Installing
 
 ```bash
 npm i crel2
@@ -30,7 +30,7 @@ For standard script tag style:
 <script src="crel.min.js"></script>
 ```
 
-# Usage
+### Usage
 
 Syntax:
 
@@ -46,7 +46,7 @@ where `childN` may be:
 - `null`, which will be ignored, or
 - an `Array` containing any of the above
 
-## Examples
+### Examples
 
 ```javascript
 let element = crel('div',
@@ -113,7 +113,7 @@ crel(someDiv, crel(someOtherDiv, anotherOne));
 
 _But don't._
 
-# Proxy support
+### Proxy support
 
 If you are using Crel in an environment that supports Proxies, you can also use the new API:
 
