@@ -17,7 +17,7 @@ For AMD:
 
 ```javascript
 require.config({paths: { crel: 'https://example.com/static/js/crel.min.js' }});
-require(['crel'], (crel) => {
+require(['crel2'], (crel) => {
     // Your code
 });
 ```
