@@ -90,7 +90,7 @@ crel(document.body,
         crel('li', 'item 2'),
         crel('li', 'item 3')
     ),
-    crel('button', {onclick: () => alert('Hello!')}, 'Click me');
+    crel('button', {onclick: () => alert('Hello!')}, 'Click me')
 );
 ```
 
